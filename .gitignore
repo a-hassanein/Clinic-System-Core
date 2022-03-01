@@ -1,2 +1,3 @@
-/clinic/main/migrations
 /clinic/main/__pycache__
+/clinic/main/migrations/
+/clinic/main/migrations/*
