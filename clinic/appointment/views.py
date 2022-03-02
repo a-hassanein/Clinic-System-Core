@@ -8,3 +8,6 @@ from .serializers import AppointmentSerializer
 class AppointmentViewset(viewsets.ModelViewSet):
     queryset = Appointment.objects.all()
     serializer_class = AppointmentSerializer
+
+
+
