@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'appointment.apps.AppointmentConfig',
     'rest_framework',
     'prescription.apps.PrescriptionConfig',
+    'labs.apps.LabsConfig'
 ]
 
 MIDDLEWARE = [
