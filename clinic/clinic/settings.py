@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'patient.apps.PatientConfig',
     'appointment.apps.AppointmentConfig',
     'rest_framework',
     'prescription.apps.PrescriptionConfig',
