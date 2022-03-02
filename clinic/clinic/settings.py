@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'appointment.apps.AppointmentConfig',
     'rest_framework',
+    'prescription.apps.PrescriptionConfig',
 ]
 
 MIDDLEWARE = [
