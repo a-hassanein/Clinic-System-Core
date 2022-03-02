@@ -45,6 +45,7 @@ class Appointment(models.Model):
     patient_phone = models.ForeignKey(Patient, on_delete=models.CASCADE)
     appointment_date = models.DateField()
     checkup_type = models.CharField(max_length=25, null=False)
+    completed = models.BooleanField(default=False)
 
 
 class Labs(models.Model):
