@@ -25,7 +25,7 @@ class Assistant(models.Model):
     assistant_gender = models.CharField(max_length=20, null=False)
     assistant_email = models.EmailField(max_length=100, null=False)
     assistant_age = models.IntegerField(null=False)
-    patient_address = models.CharField(max_length=500)
+    assistant_address = models.CharField(max_length=500)
 
 
 class Patient(models.Model):
@@ -72,12 +72,12 @@ class Bill(models.Model):
     patient_phone = models.ForeignKey(Patient, on_delete=models.CASCADE)
     activity_name = models.CharField(max_length=200, null=False)
     activity_price = models.IntegerField(null=False)
-    total_price = models.IntegerField()
+    total_price = models.IntegerField(null=True)
 
 
 class Surgery(models.Model):
     surgery_id = models.AutoField(primary_key=True)
-    bill = models.ForeignKey(Bill, on_delete=models.CASCADE)
+    bill = models.ForeignKey(Bill, on_delete=models.CASCADE, null=True)
     surgery_name = models.CharField(max_length=100, null=False)
     surgery_price = models.IntegerField(null=False)
     surgery_description = models.CharField(max_length=100, null=False)

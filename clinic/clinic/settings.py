@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'appointment.apps.AppointmentConfig',
     'rest_framework',
     'prescription.apps.PrescriptionConfig',
-    'labs.apps.LabsConfig'
+    'labs.apps.LabsConfig',
+    'surgery.apps.SurgeryConfig',
+    'bill.apps.BillConfig',
 ]
 
 MIDDLEWARE = [

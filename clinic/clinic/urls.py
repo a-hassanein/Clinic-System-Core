@@ -23,6 +23,8 @@ urlpatterns = [
     path('prescription/', include('prescription.urls')),
     path('patient/', include('patient.urls')),
     path('labs/', include('labs.urls')),
-
+    path('surgery/', include('surgery.urls')),
+    path('bill/', include('bill.urls')),
+    path('clinic/', include('bill.urls')),
 ]
 
