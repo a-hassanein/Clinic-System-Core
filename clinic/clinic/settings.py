@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-wz3y75*smxq)uf0=%w+k%r$eiay8q_5*q5dxfudhra^8mvchiw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,13 +40,19 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'patient.apps.PatientConfig',
     'appointment.apps.AppointmentConfig',
+    'corsheaders',
     'rest_framework',
+<<<<<<< HEAD
+
+=======
     'prescription.apps.PrescriptionConfig',
     'labs.apps.LabsConfig',
     'materials.apps.MaterialsConfig'
+>>>>>>> dc8c7ad178e35575c9a8c23d727c4f656ccf37bf
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -54,6 +60,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
 ]
 
 ROOT_URLCONF = 'clinic.urls'
