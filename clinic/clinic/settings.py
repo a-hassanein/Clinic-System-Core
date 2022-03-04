@@ -46,7 +46,9 @@ INSTALLED_APPS = [
     'labs.apps.LabsConfig',
     'surgery.apps.SurgeryConfig',
     'bill.apps.BillConfig',
-    'materials.apps.MaterialsConfig'
+    'materials.apps.MaterialsConfig',
+    'assistant.apps.AssistantConfig',
+
 ]
 
 MIDDLEWARE = [
