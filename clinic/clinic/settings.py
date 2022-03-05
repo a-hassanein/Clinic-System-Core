@@ -42,13 +42,10 @@ INSTALLED_APPS = [
     'appointment.apps.AppointmentConfig',
     'corsheaders',
     'rest_framework',
-<<<<<<< HEAD
 
-=======
     'prescription.apps.PrescriptionConfig',
     'labs.apps.LabsConfig',
     'materials.apps.MaterialsConfig'
->>>>>>> dc8c7ad178e35575c9a8c23d727c4f656ccf37bf
 ]
 
 MIDDLEWARE = [
