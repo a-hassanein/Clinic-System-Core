@@ -48,9 +48,30 @@ INSTALLED_APPS = [
     'bill.apps.BillConfig',
     'materials.apps.MaterialsConfig',
     'assistant.apps.AssistantConfig',
+    'doctors.apps.DoctorsConfig',
 
 ]
-
+# REST_FRAMEWORK = {
+#    'DEFAULT_AUTHENTICATION_CLASSES': (
+#        'rest_framework.authentication.TokenAuthentication',
+#    ),
+#    'DEFAULT_PERMISSION_CLASSES': (
+#         'rest_framework.permissions.IsAdminUser'
+#    ),
+# }
+# # REST_FRAMEWORK = {
+# #     'DEFAULT_PERMISSION_CLASSES': (
+# #         'rest_framework.permissions.IsAuthenticated',
+# #     ),
+# #     'DEFAULT_AUTHENTICATION_CLASSES': (
+# #         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+# #         'rest_framework.authentication.SessionAuthentication',
+# #         'rest_framework.authentication.BasicAuthentication',
+# #     ),
+# # }
+CORS_ORIGIN_WHITELIST = (
+    'localhost:3000',
+)
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -150,3 +171,8 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'doctors.Doctor'
+
+CORS_ORIGIN_ALLOW_ALL=True
+CORS_ALLOW_CREDENTIALS=True

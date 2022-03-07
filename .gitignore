@@ -1,3 +1,16 @@
 /clinic/main/__pycache__
+/clinic/appointment/__pycache__
+/clinic/assistant/__pycache__
+/clinic/bill/__pycache__
+/clinic/clinic/__pycache__
+/clinic/doctor_clinic/__pycache__
+/clinic/doctors/__pycache__
+/clinic/labs/__pycache__
+/clinic/materials/__pycache__
+/clinic/patient/__pycache__
+/clinic/prescription/__pycache__
+/clinic/surgery/__pycache__
 /clinic/main/migrations/
 /clinic/main/migrations/*
+/clinic/doctors/migrations/
+/clinic/doctors/migrations/*

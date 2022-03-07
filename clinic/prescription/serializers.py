@@ -4,6 +4,6 @@ from main.models import Prescription
 
 class PrescriptionSerializer(serializers.ModelSerializer):
 
-    class meta:
+    class Meta:
         model = Prescription
         fields = '__all__'

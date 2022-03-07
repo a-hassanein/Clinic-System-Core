@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path , include
 #from appointment.urls import router
+from rest_framework_jwt.views import obtain_jwt_token
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,8 +26,9 @@ urlpatterns = [
     path('labs/', include('labs.urls')),
     path('surgery/', include('surgery.urls')),
     path('bill/', include('bill.urls')),
-    path('clinic/', include('bill.urls')),
+    path('clinic/', include('doctor_clinic.urls')),
     path('materials/', include('materials.urls')),
     path('assistant/', include('assistant.urls')),
+    path('doctors/', include('doctors.urls'))
 ]
 

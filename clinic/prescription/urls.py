@@ -1,11 +1,9 @@
-import django
-
-
-from django.urls import path
-from . import views
-
-
+from django.urls import include, path
+from rest_framework import routers
+from .views import *
+router = routers.DefaultRouter()
+router.register('prescription' , Prescriptionviewset )
 urlpatterns = [
-    path('drugs', views.drugs_list, name='drugs_list'),
-    
+    path('', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]

@@ -47,11 +47,13 @@ class Patient(models.Model):
 
 class Appointment(models.Model):
     appointment_id = models.AutoField(primary_key=True)
+    patient_id = models.ForeignKey(Patient, on_delete=models.CASCADE)
     patient_name = models.CharField(max_length=100 , null=False)
-    patient_phone = models.ForeignKey(Patient, on_delete=models.CASCADE)
+    patient_phone = models.CharField(max_length=25 , null=False)
     appointment_date = models.DateTimeField(null=False)
     checkup_type = models.CharField(max_length=25, null=False)
     completed = models.BooleanField(default=False)
+
 
 
 class Labs(models.Model):
@@ -64,13 +66,13 @@ class Labs(models.Model):
 class Prescription(models.Model):
     prescription_id = models.AutoField(primary_key=True)
     appointment_id = models.ForeignKey(Appointment, on_delete=models.CASCADE)
-    drug_name = models.CharField(max_length=200)
-    drug_dose = models.CharField(max_length=100)
-    drug_dosage_form = models.CharField(max_length=100)
-    frequency = models.CharField(max_length=100)
-    number_of_days = models.IntegerField()
-    duration = models.CharField(max_length=50)
-    instructions = models.CharField(max_length=500)
+    drug_name = models.CharField(max_length=200, null=True)
+    drug_dose = models.CharField(max_length=100, null=True)
+    drug_dosage_form = models.CharField(max_length=100, null=True)
+    frequency = models.CharField(max_length=100, null=True)
+    number_of_days = models.IntegerField(null=True)
+    duration = models.CharField(max_length=50, null=True)
+    instructions = models.CharField(max_length=500, null=True)
 
 
 class Bill(models.Model):
