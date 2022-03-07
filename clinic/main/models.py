@@ -47,11 +47,13 @@ class Patient(models.Model):
 
 class Appointment(models.Model):
     appointment_id = models.AutoField(primary_key=True)
+    patient_id = models.ForeignKey(Patient, on_delete=models.CASCADE)
     patient_name = models.CharField(max_length=100 , null=False)
-    patient_phone = models.ForeignKey(Patient, on_delete=models.CASCADE)
+    patient_phone = models.CharField(max_length=25 , null=False)
     appointment_date = models.DateTimeField(null=False)
     checkup_type = models.CharField(max_length=25, null=False)
     completed = models.BooleanField(default=False)
+
 
 
 class Labs(models.Model):
