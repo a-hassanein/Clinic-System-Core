@@ -13,7 +13,7 @@ class Doctor(AbstractUser):
     age = models.IntegerField(null=False)
     password = models.CharField(null=False, max_length=300)
     phone =  models.CharField(null=False,validators=[phone_regex],max_length=14)
-   
+
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username','name','gender','age','password','phone']
