@@ -172,11 +172,7 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-<<<<<<< HEAD
-
-=======
 AUTH_USER_MODEL = 'doctors.Doctor'
 
 CORS_ORIGIN_ALLOW_ALL=True
 CORS_ALLOW_CREDENTIALS=True
->>>>>>> 47a17eabb7d6d5c5e2a2e20161ae5098c5099e8c
