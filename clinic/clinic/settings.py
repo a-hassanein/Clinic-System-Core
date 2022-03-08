@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'materials.apps.MaterialsConfig',
     'assistant.apps.AssistantConfig',
     'doctors.apps.DoctorsConfig',
+    'labfav.apps.LabfavConfig',
+    'drugfav.apps.DrugfavConfig'
 
 ]
 # REST_FRAMEWORK = {
