@@ -31,5 +31,7 @@ urlpatterns = [
     path('assistant/', include('assistant.urls')),
     path('doctors/', include('doctors.urls')),
     path('favlabs/', include('labfav.urls')),
+    path('favdrugs/', include('drugfav.urls')),
+
 ]
 
