@@ -60,7 +60,6 @@ class Labs(models.Model):
     Lab_id = models.AutoField(primary_key=True)
     appointment_id = models.ForeignKey(Appointment, on_delete=models.CASCADE)
     Lab_name = models.CharField(max_length=100, null=False)
-    Lab_type = models.CharField(max_length=50, null=False)
 
 
 class Prescription(models.Model):
