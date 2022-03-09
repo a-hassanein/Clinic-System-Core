@@ -79,7 +79,6 @@ class Bill(models.Model):
     appointment_id = models.ForeignKey(Appointment, on_delete=models.CASCADE)
     activity_name = models.CharField(max_length=200, null=False)
     activity_price = models.IntegerField(null=False)
-    total_price = models.IntegerField(null=True)
 
 
 class Surgery(models.Model):
