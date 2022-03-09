@@ -19,7 +19,7 @@ from django.urls import path , include
 from rest_framework_jwt.views import obtain_jwt_token
 
 urlpatterns = [
-  #  path('admin/', admin.site.urls),
+#    path('admin/', admin.site.urls),
     path('appointment/' , include('appointment.urls')),
     path('prescription/', include('prescription.urls')),
     path('patient/', include('patient.urls')),
