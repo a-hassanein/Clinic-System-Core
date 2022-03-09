@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     'doctors.apps.DoctorsConfig',
     'setting.apps.SettingConfig',
     'labfav.apps.LabfavConfig',
-    'drugfav.apps.DrugfavConfig'
+    'drugfav.apps.DrugfavConfig',
+    'contactus.apps.ContactusConfig',
 
 ]
 # REST_FRAMEWORK = {

@@ -100,4 +100,11 @@ class Clinic_Phone(models.Model):
     clinic_phone_id = models.AutoField(primary_key=True)
     clinic_phone = models.CharField(max_length=100, null=False)
 
+class Contactus(models.Model):
+    msg_id = models.AutoField(primary_key=True)
+    client_name = models.CharField(max_length=200, null=False)
+    client_email = models.EmailField(max_length=100, null=False)
+    client_msg = models.CharField(max_length=1000, null=False)
+
+
 

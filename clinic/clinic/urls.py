@@ -33,6 +33,7 @@ urlpatterns = [
     path('setting/', include('setting.urls')),
     path('favlabs/', include('labfav.urls')),
     path('favdrugs/', include('drugfav.urls')),
+    path('contactus/', include('contactus.urls'))
 
 ]
 
