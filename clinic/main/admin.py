@@ -13,3 +13,6 @@ admin.site.register(Bill)
 admin.site.register(Surgery)
 admin.site.register(Material)
 admin.site.register(Clinic_Phone)
+admin.site.register(Contactus)
+admin.site.site_header = "Clinic System"
+admin.site.site_title = "Clinic System"

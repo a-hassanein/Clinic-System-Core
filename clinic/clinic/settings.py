@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'main.apps.MainConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -49,6 +50,10 @@ INSTALLED_APPS = [
     'materials.apps.MaterialsConfig',
     'assistant.apps.AssistantConfig',
     'doctors.apps.DoctorsConfig',
+    'setting.apps.SettingConfig',
+    'labfav.apps.LabfavConfig',
+    'drugfav.apps.DrugfavConfig',
+    'contactus.apps.ContactusConfig',
 
 ]
 # REST_FRAMEWORK = {

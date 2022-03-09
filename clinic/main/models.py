@@ -27,9 +27,9 @@ class Assistant(models.Model):
     assistant_name = models.CharField(max_length=200, null=False)
     assistant_gender = models.CharField(max_length=20, null=False)
     assistant_email = models.EmailField(max_length=100, null=False)
-    assistant_age = models.IntegerField(null=False)
+    assistant_age = models.CharField(max_length=5, null=False)
     assistant_address = models.CharField(max_length=500)
-    assistant_number = models.IntegerField(null=False)
+    assistant_number = models.CharField(max_length=11, null=False)
     assistant_pass = models.CharField(max_length=200, null=False)
 
 
@@ -60,7 +60,6 @@ class Labs(models.Model):
     Lab_id = models.AutoField(primary_key=True)
     appointment_id = models.ForeignKey(Appointment, on_delete=models.CASCADE)
     Lab_name = models.CharField(max_length=100, null=False)
-    Lab_type = models.CharField(max_length=50, null=False)
 
 
 class Prescription(models.Model):
@@ -80,7 +79,6 @@ class Bill(models.Model):
     appointment_id = models.ForeignKey(Appointment, on_delete=models.CASCADE)
     activity_name = models.CharField(max_length=200, null=False)
     activity_price = models.IntegerField(null=False)
-    total_price = models.IntegerField(null=True)
 
 
 class Surgery(models.Model):
@@ -101,5 +99,12 @@ class Clinic_Phone(models.Model):
     clinic_id = models.ForeignKey(Clinic, on_delete=models.CASCADE)
     clinic_phone_id = models.AutoField(primary_key=True)
     clinic_phone = models.CharField(max_length=100, null=False)
+
+class Contactus(models.Model):
+    msg_id = models.AutoField(primary_key=True)
+    client_name = models.CharField(max_length=200, null=False)
+    client_email = models.EmailField(max_length=100, null=False)
+    client_msg = models.CharField(max_length=1000, null=False)
+
 
 
