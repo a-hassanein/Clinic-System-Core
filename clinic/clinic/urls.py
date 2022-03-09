@@ -30,6 +30,7 @@ urlpatterns = [
     path('materials/', include('materials.urls')),
     path('assistant/', include('assistant.urls')),
     path('doctors/', include('doctors.urls')),
+    path('setting/', include('setting.urls')),
     path('favlabs/', include('labfav.urls')),
     path('favdrugs/', include('drugfav.urls')),
 

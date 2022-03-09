@@ -27,9 +27,9 @@ class Assistant(models.Model):
     assistant_name = models.CharField(max_length=200, null=False)
     assistant_gender = models.CharField(max_length=20, null=False)
     assistant_email = models.EmailField(max_length=100, null=False)
-    assistant_age = models.IntegerField(null=False)
+    assistant_age = models.CharField(max_length=5, null=False)
     assistant_address = models.CharField(max_length=500)
-    assistant_number = models.IntegerField(null=False)
+    assistant_number = models.CharField(max_length=11, null=False)
     assistant_pass = models.CharField(max_length=200, null=False)
 
 
