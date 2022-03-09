@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'materials.apps.MaterialsConfig',
     'assistant.apps.AssistantConfig',
     'doctors.apps.DoctorsConfig',
+    'setting.apps.SettingConfig',
 
 ]
 # REST_FRAMEWORK = {
