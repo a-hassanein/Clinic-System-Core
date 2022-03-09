@@ -30,6 +30,12 @@ urlpatterns = [
     path('materials/', include('materials.urls')),
     path('assistant/', include('assistant.urls')),
     path('doctors/', include('doctors.urls')),
+<<<<<<< HEAD
     path('setting/', include('setting.urls')),
+=======
+    path('favlabs/', include('labfav.urls')),
+    path('favdrugs/', include('drugfav.urls')),
+
+>>>>>>> 8390f3626b346370987480647052e651e4406654
 ]
 
