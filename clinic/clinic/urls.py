@@ -35,9 +35,12 @@ urlpatterns = [
     # path('doctors/', include('doctors.urls')),
     path('favlabs/', include('labfav.urls')),
     path('favdrugs/', include('drugfav.urls')),
-    
+    path('setting/', include('setting.urls')),
+    path('favlabs/', include('labfav.urls')),
+    path('favdrugs/', include('drugfav.urls')),
+    path('contactus/', include('contactus.urls')),
+    path('analytics/' , include('analytics.urls') ),
 
-]
-
-# urlpatterns += [re_path(r'^.*', TemplateView.as_view(template_name='index.html'))]
+] 
+urlpatterns += [re_path(r'^.*', TemplateView.as_view(template_name='index.html'))]
 

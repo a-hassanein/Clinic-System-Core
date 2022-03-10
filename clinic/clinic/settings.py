@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'main.apps.MainConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -52,8 +53,11 @@ INSTALLED_APPS = [
     'materials.apps.MaterialsConfig',
     'assistant.apps.AssistantConfig',
     'accounts.apps.AccountsConfig',
+    'setting.apps.SettingConfig',
     'labfav.apps.LabfavConfig',
-    'drugfav.apps.DrugfavConfig'
+    'drugfav.apps.DrugfavConfig',
+    'contactus.apps.ContactusConfig',
+    'analytics.apps.AnalyticsConfig',
 
 ]
 # REST_FRAMEWORK = {
@@ -194,14 +198,7 @@ STATICFILES_DIRS = [
 
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated'
-    ],
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),
-}
+
 REST_FRAMEWORK = {
    'DEFAULT_AUTHENTICATION_CLASSES': (
        'rest_framework.authentication.TokenAuthentication',

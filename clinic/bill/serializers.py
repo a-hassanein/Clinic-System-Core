@@ -4,4 +4,4 @@ from main.models import Bill
 class BillSerializer(serializers.ModelSerializer):
     class Meta:
         model = Bill
-        fields = '__all__'
+        fields = "__all__"
