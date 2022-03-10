@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ce190a7f.css",
+    "main.js": "/static/js/main.253d2383.js",
+    "static/js/787.e91329f1.chunk.js": "/static/js/787.e91329f1.chunk.js",
+    "static/media/Hassanein.png": "/static/media/Hassanein.d9b45d7a8353a318bdae.png",
+    "static/media/Asmaa2.png": "/static/media/Asmaa2.f9cc877bd9afb08d7ef2.png",
+    "static/media/Abrar.png": "/static/media/Abrar.a5a8ebff25a81b7a17a7.png",
+    "static/media/Alaa2.png": "/static/media/Alaa2.b5d56674be6d48fcb827.png",
+    "static/media/ashraf.png": "/static/media/ashraf.ff00ab9018c96c5375e7.png",
+    "static/media/banner.png": "/static/media/banner.175fe781138568a5f4cb.png",
+    "static/media/Abdo.jpeg": "/static/media/Abdo.44463c2ab11069b2e7b5.jpeg",
+    "static/media/logo3.png": "/static/media/logo3.bb0f9c9a263c6548576f.png",
+    "static/media/logo.png": "/static/media/logo.e78abbfd039041bf7d1f.png",
+    "static/media/logo4.png": "/static/media/logo4.28b96411f57f69d70cac.png",
+    "static/media/login-remove.png": "/static/media/login-remove.de658bbbaa3b449376f6.png",
+    "static/media/banner2.png": "/static/media/banner2.6e34389e82f98b3b64b7.png",
+    "static/media/signup-remove.png": "/static/media/signup-remove.22f5e7957cf50d0c37cb.png",
+    "static/media/contact2.png": "/static/media/contact2.a5c1f94683c921bf2791.png",
+    "static/media/medicalreport.png": "/static/media/medicalreport.e6d49e032da40a9f7ff0.png",
+    "static/media/RX.png": "/static/media/RX.08495c10041782225fa2.png",
+    "static/media/newmedicalrecord .png": "/static/media/newmedicalrecord .175fe23d81e884616be4.png",
+    "index.html": "/index.html",
+    "main.ce190a7f.css.map": "/static/css/main.ce190a7f.css.map",
+    "main.253d2383.js.map": "/static/js/main.253d2383.js.map",
+    "787.e91329f1.chunk.js.map": "/static/js/787.e91329f1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce190a7f.css",
+    "static/js/main.253d2383.js"
+  ]
+}
