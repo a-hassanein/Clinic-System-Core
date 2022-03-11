@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'appointment.apps.AppointmentConfig',
     'corsheaders',
     'rest_framework',
+    'rest_framework.authtoken',
     'djoser',
     'prescription.apps.PrescriptionConfig',
     'labs.apps.LabsConfig',
@@ -58,6 +59,7 @@ INSTALLED_APPS = [
     'drugfav.apps.DrugfavConfig',
     'contactus.apps.ContactusConfig',
     'analytics.apps.AnalyticsConfig',
+    'rest_framework_simplejwt',
 
 ]
 # REST_FRAMEWORK = {
@@ -68,19 +70,20 @@ INSTALLED_APPS = [
 #         'rest_framework.permissions.IsAdminUser'
 #    ),
 # }
-# # REST_FRAMEWORK = {
-# #     'DEFAULT_PERMISSION_CLASSES': (
-# #         'rest_framework.permissions.IsAuthenticated',
-# #     ),
-# #     'DEFAULT_AUTHENTICATION_CLASSES': (
-# #         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-# #         'rest_framework.authentication.SessionAuthentication',
-# #         'rest_framework.authentication.BasicAuthentication',
-# #     ),
-# # }
-CORS_ORIGIN_WHITELIST = (
-    'localhost:3000',
-)
+# REST_FRAMEWORK = {
+#     'DEFAULT_PERMISSION_CLASSES': (
+#         'rest_framework.permissions.IsAuthenticated',
+#     ),
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#         # 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+#         # # 'rest_framework.authentication.SessionAuthentication',
+#         # 'rest_framework.authentication.BasicAuthentication',
+#         'rest_framework.permissions.IsAdminUser',
+#     ),
+# }
+
+
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -201,12 +204,16 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 REST_FRAMEWORK = {
    'DEFAULT_AUTHENTICATION_CLASSES': (
-       'rest_framework.authentication.TokenAuthentication',
+    #    'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+       'rest_framework.authentication.BasicAuthentication',  # enables simple command line authentication
+       'rest_framework.authentication.SessionAuthentication',
    ),
    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAdminUser'
+        'rest_framework.permissions.IsAdminUser',
+        'rest_framework.permissions.IsAuthenticated',
    ),
 }
+
 SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('JWT',),
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
