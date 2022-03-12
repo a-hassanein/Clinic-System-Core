@@ -231,6 +231,9 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.RemoteUserBackend',
 
 )
+DOMAIN = 'localhost:3000'
+SITE_NAME = 'Clinic System'
+
 DJOSER = {
     'LOGIN_FIELD': 'email',
     'USER_CREATE_PASSWORD_RETYPE': True,
