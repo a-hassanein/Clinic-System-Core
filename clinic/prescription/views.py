@@ -24,7 +24,7 @@ def drugget(request, id):
         return Response(drugsdata)
 
 
-@api_view(['GET','DELEtE'])
+@api_view(['GET','DELETE'])
 def drugdelete(request,id):
     drug = Prescription.objects.get(prescription_id=id)
     if request.method == 'GET':
